@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rinterio | Innovative Building Design Solutions</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome icons -->
+    <link rel="stylesheet" href="./assets/css/font-awesome.css" />
+
+    <!-- Tailwind CSS -->
+    <link href="./src/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-customBg font-manrope">
+    <!-- Header -->
+    <header class="relative">
+      <nav
+        class="container px-5 mx-auto mt-4 md:mt-[14px] lg:mt-6 md:px-8 lg:px-0"
+      >
+        <div class="flex items-center justify-between py-4">
+          <!-- Nav Logo -->
+          <a href="index.html" class="flex items-center gap-2">
+            <div
+              class="flex items-center justify-center w-8 h-8 rounded-full bg-customGreen"
+            >
+              <i class="fa-regular fa-arrow-up-right"></i>
+            </div>
+            <h2 class="text-[28px] lg:text-[32px] font-extrabold">Rinterio</h2>
+          </a>
+
+          <!-- Nav List -->
+          <div class="hidden lg:block">
+            <ul class="flex items-center gap-10 text-customGray-100">
+              <li class="font-extrabold text-customGray-200">
+                <a href="">Home</a>
+              </li>
+              <li
+                class="duration-300 hover:font-extrabold hover:ease-in hover:text-customGray-200"
+              >
+                <a href="">Services</a>
+              </li>
+              <li
+                class="duration-300 hover:font-extrabold hover:ease-in hover:text-customGray-200"
+              >
+                <a href="">Portfolio</a>
+              </li>
+              <li
+                class="duration-300 hover:font-extrabold hover:ease-in hover:text-customGray-200"
+              >
+                <a href="">Blogs</a>
+              </li>
+              <li
+                class="duration-300 hover:font-extrabold hover:ease-in hover:text-customGray-200"
+              >
+                <a href="">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Nav Search, cart, consult button -->
+          <div class="flex items-center gap-4">
+            <div class="items-center hidden gap-4 md:flex">
+              <!-- search icon -->
+              <div
+                class="flex items-center justify-center w-12 h-12 duration-300 ease-in bg-white border rounded-full cursor-pointer hover:shadow-md"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6 text-customGray-100 fill-none"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                  />
+                </svg>
+              </div>
+
+              <!-- Cart icon -->
+              <a href=""
+                class="flex items-center justify-center w-12 h-12 duration-300 ease-in bg-white border rounded-full hover:shadow-md"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6 text-customGray-100 fill-none"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                  />
+                </svg>
+              </a>
+
+              <!-- Consult button -->
+              <a
+                href=""
+                class="flex items-center gap-2 px-5 py-[10px] rounded-full lg:py-3 bg-customGreen hover:shadow-md ease-in duration-300"
+              >
+                <span class="text-xl font-bold text-customDark-100"
+                  >Book Consult</span
+                >
+                <div
+                  class="flex items-center justify-center rounded-full w-7 h-7 lg:w-8 lg:h-8 bg-customDark-100"
+                >
+                  <i
+                    class="text-xs text-white fa-regular fa-arrow-up-right"
+                  ></i>
+                </div>
+              </a>
+            </div>
+
+            <!-- Hamburger Icon -->
+            <div
+              id="nav-toggle"
+              class="flex items-center justify-center w-12 h-12 bg-white border rounded-full lg:hidden"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-customGray-100 fill-none"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Small and medium Size screen nav -->
+        <div
+          id="nav-menu"
+          class="absolute left-0 w-full h-screen transition-transform duration-300 ease-in-out transform -translate-x-full bg-customBg -top-4 lg:hidden"
+        >
+          <div class="px-5 py-3 bg-white">
+            <!-- Nav close button -->
+            <div class="flex justify-end">
+              <i
+                id="nav-close"
+                class="text-2xl text-green-600 cursor-pointer fa-solid fa-xmark"
+              ></i>
+            </div>
+            <p class="pb-6 text-2xl font-extrabold text-customDark-200">Menu</p>
+            <ul class="flex flex-col gap-6 font-semibold text-customGray-200">
+              <li
+                class="duration-300 hover:font-extrabold hover:ease-in hover:text-customGray-200"
+              >
+                <a href="">Home</a>
+              </li>
+              <li
+                class="duration-300 hover:font-extrabold hover:ease-in hover:text-customGray-200"
+              >
+                <a href="">Services</a>
+              </li>
+              <li
+                class="duration-300 hover:font-extrabold hover:ease-in hover:text-customGray-200"
+              >
+                <a href="">Portfolio</a>
+              </li>
+              <li
+                class="duration-300 hover:font-extrabold hover:ease-in hover:text-customGray-200"
+              >
+                <a href="">Blogs</a>
+              </li>
+              <li
+                class="duration-300 hover:font-extrabold hover:ease-in hover:text-customGray-200"
+              >
+                <a href="">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="px-4 py-5 mt-4 space-y-4 bg-white">
+            <!-- search icon -->
+            <div
+              class="flex items-center justify-center w-full h-12 gap-2 bg-white border border-customGreen rounded-xl"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-customGray-100 fill-none"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                />
+              </svg>
+              <span class="font-semibold text-customGray-200">Search</span>
+            </div>
+
+            <!-- Cart icon -->
+            <div
+              class="flex items-center justify-center w-full h-12 gap-2 bg-white border border-customGreen rounded-xl"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-customGray-100 fill-none"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                />
+              </svg>
+              <span class="font-semibold text-customGray-200">Cart</span>
+            </div>
+
+            <!-- Consult button -->
+            <a
+              href=""
+              class="flex items-center justify-center gap-2 px-5 py-[10px] rounded-xl lg:py-3 bg-customGreen"
+            >
+              <span class="text-xl font-bold text-customDark-100"
+                >Book Consult</span
+              >
+              <div
+                class="flex items-center justify-center rounded-full w-7 h-7 lg:w-8 lg:h-8 bg-customDark-100"
+              >
+                <i class="text-xs text-white fa-regular fa-arrow-up-right"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main content -->
+    <main>
+      <!-- Hero section -->
+      <section
+        class="pb-10 md:pb-[80px] lg:pb-[100px] bg-gradient-to-t from-white to-transparent"
+      >
+        <div
+          class="container px-5 mx-auto mt-4 md:mt-[14px] lg:mt-6 md:px-8 lg:px-0"
+        >
+          <div class="grid space-y-6 place-items-center">
+            <img src="./assets/img/banner.png" alt="Hero image" />
+            <h1
+              class="text-[28px] md:text-4xl lg:text-[64px] font-extrabold text-center leading-8 md:leading-normal lg:leading-[86px] text-customDark-200 text-stroke"
+            >
+              A barn house of this design has a striking appearance
+            </h1>
+            <p
+              class="md:w-[566px] lg:w-[930px] text-sm md:text-base leading-6 md:leading-normal font-medium text-center text-customGray-200"
+            >
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents, and large windows that flood the space with natural
+              light.
+            </p>
+
+            <!-- Hero Details button -->
+            <a
+              href=""
+              class="flex items-center md:justify-start justify-center w-full md:w-auto gap-2 px-5 py-[10px] rounded-full lg:py-3 bg-customGreen bg-opacity-50 border border-customGreen hover:shadow-lg hover:bg-[#c7fc89] ease-in duration-150"
+            >
+              <span class="text-xl font-bold text-customDark-100"
+                >View Details</span
+              >
+              <div
+                class="flex items-center justify-center rounded-full w-7 h-7 lg:w-8 lg:h-8 bg-customGreen"
+              >
+                <i
+                  class="text-xs text-customDark-200 fa-regular fa-arrow-up-right"
+                ></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section>
+        <div
+          class="container px-5 mx-auto mt-4 md:mt-[14px] lg:mt-6 md:px-8 lg:px-0"
+        >
+          <div
+            class="flex flex-col lg:flex-row mt-10 md:mt-[80px] lg:mt-[100px] gap-6 lg:gap-[37px]"
+          >
+            <div class="relative w-full lg:w-2/4">
+              <div class="absolute hidden -left-12 -top-16 lg:block">
+                <img src="./assets/img/Vector.png" alt="vector art" />
+              </div>
+
+              <div>
+                <div class="grid place-items-center lg:block">
+                  <a
+                    href=""
+                    class="px-4 py-2 font-bold bg-white rounded-full text-customGray-200"
+                  >
+                    <i class="fa-solid fa-arrow-right-long pe-1"></i>
+                    About us
+                  </a>
+                </div>
+
+                <h3
+                  class="mt-4 md:mt-6 text-2xl font-extrabold text-center text-customDark-200 text-stroke lg:leading-[56px] lg:text-start md:text-[32px] lg:text-[40px]"
+                >
+                  We design thoughtful, liveable spaces
+                </h3>
+
+                <p
+                  class="pt-5 lg:pt-7 font-medium md:text-base text-sm text-customGray-200 leading-[26px] text-center lg:text-start lg:w-full md:w-[640px] mx-auto"
+                >
+                  The barn house captivates with its blend of rustic charm and
+                  modern sophistication, featuring weathered wood, sleek metal
+                  accents.
+                </p>
+
+                <!-- About section card -->
+                <div
+                  class="flex flex-col items-center gap-6 md:gap-7 md:flex-row lg:block"
+                >
+                  <div
+                    class="flex gap-4 p-4 mt-6 bg-white lg:items-center lg:p-6 lg:gap-6 rounded-2xl"
+                  >
+                    <div>
+                      <img
+                        src="./assets/img/commercial.png"
+                        alt="Residential building"
+                      />
+                    </div>
+                    <div>
+                      <p
+                        class="text-base font-extrabold md:font-bold md:text-xl text-customGray-200"
+                      >
+                        Commercial
+                      </p>
+                      <p
+                        class="mt-3 font-medium text-customGray-300 lg:w-[308px]"
+                      >
+                        The barn house captivates with its blend of rustic charm
+                        and modern.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex gap-4 p-4 bg-white md:mt-6 lg:items-center lg:p-6 lg:gap-6 rounded-2xl"
+                  >
+                    <div>
+                      <img
+                        src="./assets/img/residential.png"
+                        alt="Residential building"
+                      />
+                    </div>
+                    <div>
+                      <p
+                        class="text-base font-extrabold md:font-bold md:text-xl text-customGray-200"
+                      >
+                        Residential
+                      </p>
+                      <p
+                        class="mt-3 font-medium text-customGray-300 lg:w-[308px]"
+                      >
+                        The barn house captivates with its blend of rustic charm
+                        and modern.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full lg:w-2/4">
+              <img
+                class="w-full h-56 lg:h-[560px] md:h-[385px] object-cover rounded-2xl md:rounded-3xl"
+                src="./assets/img/Rectangle.png"
+                alt="Building"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Achievement Section -->
+      <section>
+        <div class="container px-5 mx-auto mt-[100px] md:px-8 lg:px-0">
+          <div
+            class="grid grid-cols-1 p-8 bg-white rounded-3xl lg:grid-cols-4 md:grid-cols-2"
+          >
+            <div class="flex flex-col items-center p-6">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                class="w-10 h-10 text-customGray-300"
+                fill="none"
+              >
+                <path
+                  d="M8 13.5H16M8 8.5H12"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M6.09881 19C4.7987 18.8721 3.82475 18.4816 3.17157 17.8284C2 16.6569 2 14.7712 2 11V10.5C2 6.72876 2 4.84315 3.17157 3.67157C4.34315 2.5 6.22876 2.5 10 2.5H14C17.7712 2.5 19.6569 2.5 20.8284 3.67157C22 4.84315 22 6.72876 22 10.5V11C22 14.7712 22 16.6569 20.8284 17.8284C19.6569 19 17.7712 19 14 19C13.4395 19.0125 12.9931 19.0551 12.5546 19.155C11.3562 19.4309 10.2465 20.0441 9.14987 20.5789C7.58729 21.3408 6.806 21.7218 6.31569 21.3651C5.37769 20.6665 6.29454 18.5019 6.5 17.5"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <p
+                class="text-[32px] lg:text-[40px] mt-2.5 font-extrabold text-customGray-200"
+              >
+                235+
+              </p>
+              <p class="text-customGray-300 font-medium leading-[26px]">
+                Happy Client Review
+              </p>
+            </div>
+
+            <div class="flex flex-col items-center p-6">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                class="w-10 h-10 text-customGray-300"
+                fill="none"
+              >
+                <path
+                  d="M21 13.8829L20.9999 9.12817C20.9993 7.99289 20.999 7.42525 20.723 6.94931C20.447 6.47337 19.9544 6.19544 18.9692 5.63957L13.944 2.80421C12.9938 2.26807 12.5187 2 12 2C11.4813 2 11.0062 2.26807 10.056 2.80421L5.0308 5.63957C4.04562 6.19544 3.55303 6.47337 3.277 6.94931C3.00096 7.42525 3.00069 7.99289 3.00013 9.12817L3 13.8829C3 17.7094 3 19.6226 4.17157 20.8113C5.34315 22 7.22876 22 11 22H13C16.7712 22 18.6569 22 19.8284 20.8113C21 19.6226 21 17.7094 21 13.8829Z"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M10 13H8M16 13H14M10 9H8M10 17H8M16 9H14M16 17H14"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <p
+                class="text-[32px] lg:text-[40px] mt-2.5 font-extrabold text-customGray-200"
+              >
+                50+
+              </p>
+              <p class="text-customGray-300 font-medium leading-[26px]">
+                Work Departments
+              </p>
+            </div>
+
+            <div class="flex flex-col items-center p-6">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                class="w-10 h-10 text-customGray-300"
+                fill="none"
+              >
+                <path
+                  d="M20.7739 18C21.5232 18 22.1192 17.5285 22.6543 16.8691C23.7498 15.5194 21.9512 14.4408 21.2652 13.9126C20.5679 13.3756 19.7893 13.0714 18.9999 13M17.9999 11C19.3806 11 20.4999 9.88071 20.4999 8.5C20.4999 7.11929 19.3806 6 17.9999 6"
+                  stroke="currentColor"
+                  stroke-width="
+                1"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M3.2259 18C2.47659 18 1.88061 17.5285 1.34548 16.8691C0.250028 15.5194 2.04861 14.4408 2.73458 13.9126C3.43191 13.3756 4.21052 13.0714 4.99994 13M5.49994 11C4.11923 11 2.99994 9.88071 2.99994 8.5C2.99994 7.11929 4.11923 6 5.49994 6"
+                  stroke="currentColor"
+                  stroke-width="
+                1"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M8.08368 15.1112C7.0619 15.743 4.38286 17.0331 6.01458 18.6474C6.81166 19.436 7.6994 20 8.8155 20H15.1843C16.3004 20 17.1881 19.436 17.9852 18.6474C19.6169 17.0331 16.9379 15.743 15.9161 15.1112C13.52 13.6296 10.4797 13.6296 8.08368 15.1112Z"
+                  stroke="currentColor"
+                  stroke-width="
+                1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M15.4999 7.5C15.4999 9.433 13.9329 11 11.9999 11C10.0669 11 8.49988 9.433 8.49988 7.5C8.49988 5.567 10.0669 4 11.9999 4C13.9329 4 15.4999 5.567 15.4999 7.5Z"
+                  stroke="currentColor"
+                  stroke-width="
+                1"
+                />
+              </svg>
+              <p
+                class="text-[32px] lg:text-[40px] mt-2.5 font-extrabold text-customGray-200"
+              >
+                30k+
+              </p>
+              <p class="text-customGray-300 font-medium leading-[26px]">
+                Our Happy Client
+              </p>
+            </div>
+
+            <div class="flex flex-col items-center p-6">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                class="w-10 h-10 text-customGray-300"
+                fill="none"
+              >
+                <path
+                  d="M18.6161 20H19.1063C20.2561 20 21.1707 19.4761 21.9919 18.7436C24.078 16.8826 19.1741 15 17.5 15M15.5 5.06877C15.7271 5.02373 15.9629 5 16.2048 5C18.0247 5 19.5 6.34315 19.5 8C19.5 9.65685 18.0247 11 16.2048 11C15.9629 11 15.7271 10.9763 15.5 10.9312"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M4.48131 16.1112C3.30234 16.743 0.211137 18.0331 2.09388 19.6474C3.01359 20.436 4.03791 21 5.32572 21H12.6743C13.9621 21 14.9864 20.436 15.9061 19.6474C17.7889 18.0331 14.6977 16.743 13.5187 16.1112C10.754 14.6296 7.24599 14.6296 4.48131 16.1112Z"
+                  stroke="currentColor"
+                  stroke-width="1"
+                />
+                <path
+                  d="M13 7.5C13 9.70914 11.2091 11.5 9 11.5C6.79086 11.5 5 9.70914 5 7.5C5 5.29086 6.79086 3.5 9 3.5C11.2091 3.5 13 5.29086 13 7.5Z"
+                  stroke="currentColor"
+                  stroke-width="1"
+                />
+              </svg>
+              <p
+                class="text-[32px] lg:text-[40px] mt-2.5 font-extrabold text-customGray-200"
+              >
+                307+
+              </p>
+              <p class="text-customGray-300 font-medium leading-[26px]">
+                Staff Members
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Work Process Section -->
+      <section>
+        <div class="container px-5 mx-auto my-8 md:my-[72px] lg:my-[100px] md:px-8 lg:px-0">
+          <div class="grid place-items-center">
+            <a
+              href=""
+              class="px-4 py-2 font-bold bg-white rounded-full text-customGray-200"
+            >
+              <i class="fa-solid fa-arrow-right-long pe-1"></i>
+              How we works
+            </a>
+          </div>
+
+          <div>
+            <h3
+              class="mt-5 text-2xl font-bold text-center text-customDark-200 md:text-[32px] lg:text-[40px] text-stroke"
+            >
+              Our Works Process
+            </h3>
+
+            <p
+              class="pt-4 md:pt-5 lg:pt-7 font-medium md:text-base text-sm text-customGray-200 leading-[26px] text-center md:w-[630px] mx-auto"
+            >
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents.
+            </p>
+          </div>
+
+          <!-- Work process card -->
+          <div
+            class="grid grid-cols-1 gap-6 mt-8 md:grid-cols-2 lg:grid-cols-4"
+          >
+            <div class="p-6 space-y-3 bg-customPurple rounded-3xl">
+              <img src="./assets/img/concept.png" alt="Concept icon" />
+              <p
+                class="font-extrabold text-xl text-customDark-100 leading-[26px]"
+              >
+                Concept
+              </p>
+              <p class="font-medium text-customGray-200">
+                The barn house captivates with its blend of rustic charm and
+                modern.
+              </p>
+            </div>
+
+            <div class="p-6 space-y-3 bg-customYellow rounded-3xl">
+              <img src="./assets/img/flow-chart.png" alt="Flow Chart" />
+              <p
+                class="font-extrabold text-xl text-customDark-100 leading-[26px]"
+              >
+                Design Process
+              </p>
+              <p class="font-medium text-customGray-200">
+                The barn house captivates with its blend of rustic charm and
+                modern.
+              </p>
+            </div>
+
+            <div class="p-6 space-y-3 bg-customTeal rounded-3xl">
+              <img src="./assets/img/vision.png" alt="Supervision" />
+              <p
+                class="font-extrabold text-xl text-customDark-100 leading-[26px]"
+              >
+                Supervision
+              </p>
+              <p class="font-medium text-customGray-200">
+                The barn house captivates with its blend of rustic charm and
+                modern.
+              </p>
+            </div>
+
+            <div class="p-6 space-y-3 bg-customCyan rounded-3xl">
+              <img
+                src="./assets/img/budget-planning.png"
+                alt="Budget Planning"
+              />
+              <p
+                class="font-extrabold text-xl text-customDark-100 leading-[26px]"
+              >
+                Budget Planning
+              </p>
+              <p class="font-medium text-customGray-200">
+                The barn house captivates with its blend of rustic charm and
+                modern.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Portfolio section -->
+      <section class="lg:bg-white">
+        <div class="container px-5 mx-auto lg:py-[100px] md:px-8 lg:px-0">
+          <div class="grid place-items-center">
+            <a
+              href=""
+              class="px-4 py-2 font-bold rounded-full bg-customGreen/20 text-customGray-200"
+            >
+              <i class="fa-solid fa-arrow-right-long pe-1"></i>
+              Explore our Latest works
+            </a>
+          </div>
+
+          <div>
+            <h3
+              class="mt-5 text-2xl font-bold text-center text-customDark-200 md:text-[32px] lg:text-[40px] text-stroke"
+            >
+              Our Latest Portfolio
+            </h3>
+
+            <p
+              class="pt-4 md:pt-5 lg:pt-7 font-medium md:text-base text-sm text-customGray-200 leading-[26px] text-center md:w-[630px] mx-auto"
+            >
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents.
+            </p>
+          </div>
+
+          <!-- Portfolio grid -->
+          <div class="grid grid-cols-12 gap-6 mt-8">
+            <div class="col-span-12 p-6 bg-white border lg:col-span-8 rounded-3xl">
+              <div class="flex flex-col gap-6 md:flex-row">
+                <img class="w-full lg:w-[260px] h-[180px]" src="./assets/img/img1.png" alt="Building" />
+                <div class="flex flex-col justify-between gap-4">
+                  <p class="text-xl font-extrabold md:text-2xl text-customGray-200">Commercial</p>
+                  <p class="font-medium text-customGray-300 leading-[26px]">
+                    The barn house captivates with its blend of rustic charm and
+                    modern. The barn house captivates with its blend of rustic
+                    charm and modern .
+                  </p>
+
+                  <a
+                    href=""
+                    class="flex items-center gap-3"
+                  >
+                    <span class="text-base font-extrabold md:text-xl text-customDark-200"
+                      >View Details</span
+                    >
+                    <div
+                      class="flex items-center justify-center rounded-full w-7 h-7 lg:w-8 lg:h-8 bg-customGreen"
+                    >
+                      <i
+                        class="text-xs text-customDark-200 fa-regular fa-arrow-up-right"
+                      ></i>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-span-12 p-6 bg-white border md:col-span-6 lg:col-span-4 rounded-3xl">
+              <img class="w-full h-[180px]" src="./assets/img/img2.png" alt="Building" />
+            </div>
+
+            <div class="col-span-12 p-6 bg-white border md:col-span-6 lg:col-span-3 rounded-3xl">
+              <img class="w-full h-[180px]" src="./assets/img/img3.png" alt="Building" />
+            </div>
+
+            <div class="col-span-12 p-6 bg-white border lg:col-span-6 rounded-3xl">
+              <div class="flex flex-col gap-6 md:flex-row">
+                <img class="w-full lg:w-[260px] h-[180px]" src="./assets/img/img4.png" alt="Building" />
+                <div class="flex flex-col justify-between gap-4">
+                  <p class="text-xl font-extrabold md:text-2xl text-customGray-200">Commercial</p>
+                  <p class="font-medium text-customGray-300 leading-[26px]">
+                    The barn house captivates with its blend of rustic charm and
+                    modern.
+                  </p>
+
+                  <a
+                    href=""
+                    class="flex items-center gap-3"
+                  >
+                    <span class="text-base font-extrabold md:text-xl text-customDark-200"
+                      >View Details</span
+                    >
+                    <div
+                      class="flex items-center justify-center rounded-full w-7 h-7 lg:w-8 lg:h-8 bg-customGreen"
+                    >
+                      <i
+                        class="text-xs text-customDark-200 fa-regular fa-arrow-up-right"
+                      ></i>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-span-12 p-6 bg-white border md:col-span-6 lg:col-span-3 rounded-3xl">
+              <img class="w-full h-[180px]" src="./assets/img/img5.png" alt="Building" />
+            </div>
+            <div class="col-span-12 p-6 bg-white border md:col-span-6 lg:col-span-3 rounded-3xl lg:hidden">
+              <img class="w-full h-[180px]" src="./assets/img/img3.png" alt="Building" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+       <!-- Articles and News Section -->
+      <section>
+        <div class="container px-5 mx-auto my-8 md:my-[72px] lg:my-[100px] md:px-8 lg:px-0">
+          <div class="grid place-items-center">
+            <a
+              href=""
+              class="px-4 py-2 font-bold rounded-full bg-customGreen/20 text-customGray-200"
+            >
+              <i class="fa-solid fa-arrow-right-long pe-1"></i>
+              Rinterio News
+            </a>
+          </div>
+
+          <div>
+            <h3
+              class="mt-5 text-2xl font-bold text-center text-customDark-200 md:text-[32px] lg:text-[40px] text-stroke"
+            >
+            Read Our Articles and News
+            </h3>
+
+            <p
+              class="pt-4 md:pt-5 lg:pt-7 font-medium md:text-base text-sm text-customGray-200 leading-[26px] text-center md:w-[630px] mx-auto"
+            >
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents.
+            </p>
+          </div>
+          
+           <!-- Articles and News Card -->
+           <div class="grid grid-cols-3 gap-6 mt-8">
+            <div class="flex flex-col col-span-3 gap-4 p-6 bg-white md:col-span-3 lg:col-span-1 rounded-3xl md:flex-row lg:flex-col">
+
+              
+              <img class="w-full h-[191px] lg:w-full lg:h-[180px] md:w-[240px] md:h-[196px] object-cover rounded-2xl" src="./assets/img/article1.png" alt="Building">
+              
+              <div>
+                <div class="flex items-center gap-4">
+                  <div class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6 text-customGray-300" fill="none">
+                      <path d="M18 2V4M6 2V4" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M11.9955 13H12.0045M11.9955 17H12.0045M15.991 13H16M8 13H8.00897M8 17H8.00897" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M3.5 8H20.5" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M2.5 12.2432C2.5 7.88594 2.5 5.70728 3.75212 4.35364C5.00424 3 7.01949 3 11.05 3H12.95C16.9805 3 18.9958 3 20.2479 4.35364C21.5 5.70728 21.5 7.88594 21.5 12.2432V12.7568C21.5 17.1141 21.5 19.2927 20.2479 20.6464C18.9958 22 16.9805 22 12.95 22H11.05C7.01949 22 5.00424 22 3.75212 20.6464C2.5 19.2927 2.5 17.1141 2.5 12.7568V12.2432Z" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M3 8H21" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <p class="text-sm font-medium text-customGray-100">July14, 2024</p>
+                  </div>
+                  
+                  <div class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6 text-customGray-300" fill="none">
+                      <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1" />
+                      <path d="M7.5 17C9.8317 14.5578 14.1432 14.4428 16.5 17M14.4951 9.5C14.4951 10.8807 13.3742 12 11.9915 12C10.6089 12 9.48797 10.8807 9.48797 9.5C9.48797 8.11929 10.6089 7 11.9915 7C13.3742 7 14.4951 8.11929 14.4951 9.5Z" stroke="currentColor" stroke-width="1" stroke-linecap="round" />
+                  </svg>
+                    <p class="text-sm font-medium text-customGray-100">By Admin</p>
+                  </div>
+                </div>
+  
+                <div class="mt-3">
+                  <h4 class="text-xl font-extrabold text-customGray-200 leading-[30px]">How to choose the furniture right  of your home.</h4>
+                  <p class="mt-2 font-medium text-customGray-100 leading-[26px]">The barn house captivates with its blend of rustic charm and modern. </p>
+                  <a
+                      href=""
+                      class="flex items-center gap-3 mt-4"
+                    >
+                      <span class="text-base font-extrabold md:text-xl text-customDark-200"
+                        >View Details</span
+                      >
+                      <div
+                        class="flex items-center justify-center rounded-full w-7 h-7 lg:w-8 lg:h-8 bg-customGreen"
+                      >
+                        <i
+                          class="text-xs text-customDark-200 fa-regular fa-arrow-up-right"
+                        ></i>
+                      </div>
+                    </a>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col col-span-3 gap-4 p-6 bg-white md:col-span-3 lg:col-span-1 rounded-3xl md:flex-row lg:flex-col">
+
+              
+              <img class="w-full h-[191px] lg:w-full lg:h-[180px] md:w-[240px] md:h-[196px] object-cover rounded-2xl" src="./assets/img/article2.png" alt="Building">
+              
+              <div>
+                <div class="flex items-center gap-4">
+                  <div class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6 text-customGray-300" fill="none">
+                      <path d="M18 2V4M6 2V4" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M11.9955 13H12.0045M11.9955 17H12.0045M15.991 13H16M8 13H8.00897M8 17H8.00897" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M3.5 8H20.5" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M2.5 12.2432C2.5 7.88594 2.5 5.70728 3.75212 4.35364C5.00424 3 7.01949 3 11.05 3H12.95C16.9805 3 18.9958 3 20.2479 4.35364C21.5 5.70728 21.5 7.88594 21.5 12.2432V12.7568C21.5 17.1141 21.5 19.2927 20.2479 20.6464C18.9958 22 16.9805 22 12.95 22H11.05C7.01949 22 5.00424 22 3.75212 20.6464C2.5 19.2927 2.5 17.1141 2.5 12.7568V12.2432Z" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M3 8H21" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <p class="text-sm font-medium text-customGray-100">July14, 2024</p>
+                  </div>
+                  
+                  <div class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6 text-customGray-300" fill="none">
+                      <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1" />
+                      <path d="M7.5 17C9.8317 14.5578 14.1432 14.4428 16.5 17M14.4951 9.5C14.4951 10.8807 13.3742 12 11.9915 12C10.6089 12 9.48797 10.8807 9.48797 9.5C9.48797 8.11929 10.6089 7 11.9915 7C13.3742 7 14.4951 8.11929 14.4951 9.5Z" stroke="currentColor" stroke-width="1" stroke-linecap="round" />
+                  </svg>
+                    <p class="text-sm font-medium text-customGray-100">By Admin</p>
+                  </div>
+                </div>
+  
+                <div class="mt-3">
+                  <h4 class="text-xl font-extrabold text-customGray-200 leading-[30px]">How to choose the furniture right  of your home.</h4>
+                  <p class="mt-2 font-medium text-customGray-100 leading-[26px]">The barn house captivates with its blend of rustic charm and modern. </p>
+                  <a
+                      href=""
+                      class="flex items-center gap-3 mt-4"
+                    >
+                      <span class="text-base font-extrabold md:text-xl text-customDark-200"
+                        >View Details</span
+                      >
+                      <div
+                        class="flex items-center justify-center rounded-full w-7 h-7 lg:w-8 lg:h-8 bg-customGreen"
+                      >
+                        <i
+                          class="text-xs text-customDark-200 fa-regular fa-arrow-up-right"
+                        ></i>
+                      </div>
+                    </a>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col col-span-3 gap-4 p-6 bg-white md:col-span-3 lg:col-span-1 rounded-3xl md:flex-row lg:flex-col">
+
+              
+              <img class="w-full h-[191px] lg:w-full lg:h-[180px] md:w-[240px] md:h-[196px] object-cover rounded-2xl" src="./assets/img/article3.png" alt="Building">
+              
+              <div>
+                <div class="flex items-center gap-4">
+                  <div class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6 text-customGray-300" fill="none">
+                      <path d="M18 2V4M6 2V4" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M11.9955 13H12.0045M11.9955 17H12.0045M15.991 13H16M8 13H8.00897M8 17H8.00897" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M3.5 8H20.5" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M2.5 12.2432C2.5 7.88594 2.5 5.70728 3.75212 4.35364C5.00424 3 7.01949 3 11.05 3H12.95C16.9805 3 18.9958 3 20.2479 4.35364C21.5 5.70728 21.5 7.88594 21.5 12.2432V12.7568C21.5 17.1141 21.5 19.2927 20.2479 20.6464C18.9958 22 16.9805 22 12.95 22H11.05C7.01949 22 5.00424 22 3.75212 20.6464C2.5 19.2927 2.5 17.1141 2.5 12.7568V12.2432Z" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M3 8H21" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <p class="text-sm font-medium text-customGray-100">July14, 2024</p>
+                  </div>
+                  
+                  <div class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6 text-customGray-300" fill="none">
+                      <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1" />
+                      <path d="M7.5 17C9.8317 14.5578 14.1432 14.4428 16.5 17M14.4951 9.5C14.4951 10.8807 13.3742 12 11.9915 12C10.6089 12 9.48797 10.8807 9.48797 9.5C9.48797 8.11929 10.6089 7 11.9915 7C13.3742 7 14.4951 8.11929 14.4951 9.5Z" stroke="currentColor" stroke-width="1" stroke-linecap="round" />
+                  </svg>
+                    <p class="text-sm font-medium text-customGray-100">By Admin</p>
+                  </div>
+                </div>
+  
+                <div class="mt-3">
+                  <h4 class="text-xl font-extrabold text-customGray-200 leading-[30px]">How to choose the furniture right  of your home.</h4>
+                  <p class="mt-2 font-medium text-customGray-100 leading-[26px]">The barn house captivates with its blend of rustic charm and modern. </p>
+                  <a
+                      href=""
+                      class="flex items-center gap-3 mt-4"
+                    >
+                      <span class="text-base font-extrabold md:text-xl text-customDark-200"
+                        >View Details</span
+                      >
+                      <div
+                        class="flex items-center justify-center rounded-full w-7 h-7 lg:w-8 lg:h-8 bg-customGreen"
+                      >
+                        <i
+                          class="text-xs text-customDark-200 fa-regular fa-arrow-up-right"
+                        ></i>
+                      </div>
+                    </a>
+                </div>
+              </div>
+            </div>
+
+            
+           </div>
+        </div>
+      </section>
+
+      <!-- Contact Us Section -->
+       <section class="bg-cover bg-no-repeat w-full bg-opacity-50 border-[7px] border-white" style="background-image: url(./assets/img/bg.jpg);">
+        <div class="container px-5 mx-auto py-8 md:py-[72px] lg:py-[100px] md:px-8 lg:px-0">
+          
+          <div class="grid place-items-center">
+            <a
+              href=""
+              class="px-4 py-2 font-bold rounded-full bg-customGreen/20 text-customGray-200"
+            >
+              <i class="fa-solid fa-arrow-right-long pe-1"></i>
+              Let’s Connect
+            </a>
+          </div>
+
+          <div>
+            <h3
+              class="mt-5 text-2xl font-bold text-center text-customDark-200 md:text-[32px] lg:text-[40px] text-stroke"
+            >
+            Let’s Discuss Next Project
+            </h3>
+
+            <p
+              class="pt-4 md:pt-5 lg:pt-7 font-medium md:text-base text-sm text-customGray-200 leading-[26px] text-center md:w-[630px] mx-auto"
+            >
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents.
+            </p>
+          </div>
+
+          <!-- Form field -->
+          <form class="md:w-[674px] lg:w-[970px] mx-auto mt-8">
+            <div class="grid grid-cols-2 gap-6">
+              <div class="w-full col-span-2 md:col-span-1">
+                <input type="text"
+                    class="block w-full p-4 text-sm text-gray-900 border rounded-full bg-gray-50 focus:outline-none focus:ring-customGreen focus:border-customGreen"
+                    placeholder="First Name*" required />
+              </div>
+              <div class="w-full col-span-2 md:col-span-1">
+                <input type="text"
+                    class="block w-full p-4 text-sm text-gray-900 border rounded-full bg-gray-50 focus:outline-none focus:ring-customGreen focus:border-customGreen"
+                    placeholder="Last Name*" required />
+              </div>
+              <div class="w-full col-span-2 md:col-span-1">
+                <input type="text"
+                    class="block w-full p-4 text-sm text-gray-900 border rounded-full bg-gray-50 focus:outline-none focus:ring-customGreen focus:border-customGreen"
+                    placeholder="Phone Number*" required />
+              </div>
+              <div class="w-full col-span-2 md:col-span-1">
+                <input type="text"
+                    class="block w-full p-4 text-sm text-gray-900 border rounded-full bg-gray-50 focus:outline-none focus:ring-customGreen focus:border-customGreen"
+                    placeholder="Email Address*" required />
+              </div>
+            </div>
+
+            <textarea class="block w-full p-4 mt-6 text-sm text-gray-900 border h-60 rounded-3xl bg-gray-50 focus:outline-none focus:ring-customGreen focus:border-customGreen" name="desc" placeholder="Write your message here"></textarea>
+
+            <!-- Consult button -->
+            <a
+              href=""
+              class="flex mt-6 items-center justify-center gap-2 px-5 py-[10px] rounded-full lg:py-3 bg-customGreen"
+            >
+              <span class="text-xl font-bold text-customDark-100"
+                >Send Mail</span
+              >
+              <div
+                class="flex items-center justify-center rounded-full w-7 h-7 lg:w-8 lg:h-8 bg-customDark-100"
+              >
+                <i class="text-xs text-white fa-regular fa-arrow-up-right"></i>
+              </div>
+            </a>
+        </form>
+        </div>
+       </section>
+    </main>
+
+    <!-- Footer -->
+     <footer class="bg-customDark-100">
+      <div class="container px-5 mx-auto py-8 md:py-[72px] lg:py-[100px] md:px-8 lg:px-0">
+
+        <!-- Footer logo -->
+        <a href="index.html" class="flex items-center justify-center gap-2">
+          <div
+            class="flex items-center justify-center w-8 h-8 rounded-full bg-customGreen"
+          >
+            <i class="fa-regular fa-arrow-up-right"></i>
+          </div>
+          <h2 class="text-[28px] text-white lg:text-[32px] font-extrabold">Rinterio</h2>
+        </a>
+        <p
+              class="pt-4 md:pt-5 lg:pt-4 font-medium md:text-base text-sm text-customGray-100 leading-[26px] text-center md:w-[630px] mx-auto"
+            >
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents.
+            </p>
+            
+            <!-- Footer links -->
+            <div class="mt-12 flex flex-col md:flex-row gap-8 items-center justify-between w-full mx-auto lg:w-[776px] text-[#E9E9E9]">
+              <a href="">Home</a>
+              <a href="">Services</a>
+              <a href="">Portfolio</a>
+              <a href="">Blogs</a>
+              <a href="">Contact Us</a>
+            </div>
+
+            <!-- Footer Consult button -->
+            <div class="flex items-center justify-center mt-12">
+              <a
+                href=""
+                class="inline-flex w-full md:w-auto items-center justify-center gap-2 px-5 py-[10px] rounded-full lg:py-3 bg-customGreen"
+              >
+                <span class="text-xl font-bold text-customDark-100">Book Consult</span>
+                <i
+                  class="flex items-center justify-center text-xs text-white rounded-full fa-regular fa-arrow-up-right w-7 h-7 lg:w-8 lg:h-8 bg-customDark-100"
+                ></i>
+              </a>
+            </div>
+            
+          
+
+      </div>
+     </footer>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
